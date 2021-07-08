@@ -88,6 +88,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    //If you get damaged lower the value of health and set the text on the screen equel to that value
     private void HandleHealth()
     {
         health -= 1;
@@ -123,12 +124,14 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    //Jump and set the state to jumping
     private void Jump()
     {
         rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         state = State.jumping;
     }
 
+    //Change the animations depending on the state the player is in
     private void AnimationState()
     {
         if(state == State.jumping)
@@ -164,6 +167,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    //Play the sound for footsteps if you move
     private void Footstep()
     {
         footstep.Play();

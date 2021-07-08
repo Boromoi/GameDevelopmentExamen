@@ -15,6 +15,7 @@ public class Enemy : MonoBehaviour
         death = GetComponent<AudioSource>();
     }
 
+    //If the enemy gets jumped on by the player activate death() and play the death animation.
     public void JumpedOn()
     {
         anim.SetTrigger("Death");

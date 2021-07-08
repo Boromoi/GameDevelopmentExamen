@@ -5,17 +5,9 @@ using UnityEngine;
 public class Coinscript : MonoBehaviour
 {
     protected AudioSource coinpickup;
-    // Start is called before the first frame update
+    // Play a sound when the coin gets picked up.
     protected void Start()
     {
         coinpickup = GetComponent<AudioSource>();
-    }
-
-
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
